@@ -1,10 +1,17 @@
+import Fruits from "./components/Fruits";
 import Hello from "./components/Hello";
 
 function App() {
+  const person = {
+    name: "Wojciech",
+    message: "Hello there, ",
+    emoji: "✋🏻",
+    seatNumbers: [1, 4, 7],
+  };
   return (
     <div className="App">
-      <Hello name="Wojciech" message="Hello there, " emoji="✋🏻" />
-      <Hello name="Tommy" message="Hello, " emoji="✌🏾" />
+      <Hello person={person} />
+      <Fruits />
     </div>
   );
 }
