@@ -1,13 +1,9 @@
-export default function Fruit({ name, price, emoji }) {
+export default function Fruit({ name, price, emoji, soldout }) {
   return (
     <>
-      {price > 15 ? (
-        <li>
-          {name} - ${price} {emoji}
-        </li>
-      ) : (
-        ""
-      )}
+      <li>
+        {name} - ${price} {emoji} {soldout ? "sold out" : ""}
+      </li>
     </>
   );
 }
