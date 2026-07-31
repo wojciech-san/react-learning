@@ -23,7 +23,7 @@ export default function Counter() {
 
       <h1>Increase value by: {increamentBy}</h1>
       <button onClick={increaseIncreament}>Increment</button>
-      <button onClick={decreaseIncreament}>Increment</button>
+      <button onClick={decreaseIncreament}>Decrement</button>
     </div>
   );
 }
